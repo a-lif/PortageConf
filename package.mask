@@ -1,0 +1,9 @@
+# Use rust-bin instead
+dev-lang/rust
+
+# Buggy ebuilds
+#>=media-libs/libplacebo-2.72.2
+#>=dev-libs/boost-1.77.0-r2
+
+# Use duktape instead
+#dev-lang/spidermonkey

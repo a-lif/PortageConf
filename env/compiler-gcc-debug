@@ -1,0 +1,13 @@
+COMMON_FLAGS="-march=native -O0 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+LDFLAGS="-Wl,-O0 -fuse-ld=bfd"
+
+CC="gcc"
+CXX="g++"
+AR="gcc-ar"
+NM="gcc-nm"
+RANLIB="gcc-ranlib"
+STRIP="strip"

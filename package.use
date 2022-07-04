@@ -1,0 +1,101 @@
+app-admin/doas persist
+app-admin/passwordsafe qr
+app-arch/libarchive lz4 zstd
+app-arch/rar all_sfx
+app-containers/docker btrfs
+app-containers/podman btrfs
+app-containers/containerd btrfs
+# move app-emulation/docker app-containers/docker
+app-containers/docker btrfs -cli
+app-crypt/gcr gtk
+app-editors/nano justify magic
+app-emulation/qemu fuse io-uring spice usb usbredir vnc -ncurses -vhost-net
+app-emulation/virt-manager gtk
+app-emulation/virtualbox qt5
+app-laptop/laptop-mode-tools apm
+app-misc/mc sftp -slang
+app-text/poppler cairo qt5
+app-text/xmlto text
+
+dev-libs/boehm-gc cxx
+dev-libs/boost context
+dev-libs/libdbusmenu gtk3
+dev-libs/libindicate gtk
+dev-libs/libpeas gtk 
+dev-libs/libportal gtk
+dev-libs/libpwquality python
+dev-libs/xmlsec nss
+dev-libs/weston wayland-compositor
+dev-python/PyQt5 gui widgets
+dev-qt/qtdeclarative widgets
+dev-qt/qtgui egl
+dev-qt/qtwidgets gtk
+
+gnome-base/gvfs mtp
+
+kde-apps/k3b dvd encode mad mp3 taglib vcd vorbis
+kde-frameworks/kfilemetadata taglib
+
+media-gfx/imagemagick tiff
+media-gfx/inkscape imagemagick
+media-gfx/krita color-management vc
+media-libs/freetype harfbuzz
+media-libs/gegl cairo
+media-libs/gst-plugins-base theora
+media-libs/libpng apng
+media-libs/libsdl2 gles2
+media-libs/libtgvoip alsa
+media-libs/libsdl dga
+media-libs/mlt frei0r qt5 xml sdl
+media-libs/opencv contrib contribdnn qt5
+media-libs/rubberband ladspa
+media-plugins/alsa-plugins -pulseaudio
+media-sound/jack2 libsamplerate
+media-sound/ncmpcpp visualizer
+media-sound/pulseaudio -alsa-plugin alsa
+media-video/droidcam gtk
+media-video/ffmpeg encode fdk libdrm mp3 opus sdl vorbis vpx xvid
+media-video/guvcview qt5
+media-video/handbrake gtk
+media-video/pipewire pipewire-alsa
+media-video/transcode dvd
+
+net-analyzer/wireshark qt5 smi
+net-dns/dnsmasq ipv6 script
+net-firewall/iptables ipv6
+net-libs/libsoup vala
+net-misc/dhcpcd-ui gtk
+net-misc/spice-gtk usbredir
+net-wireless/blueman network
+net-wireless/bluez deprecated
+net-wireless/iwd standalone wired -crda
+
+sys-apps/openrc sysv-utils
+#sys-apps/portage python_targets_pypy3 -python_targets_python3_9
+sys-auth/polkit duktape gtk
+sys-boot/grub grub_platforms_pc mount
+sys-devel/clang default-compiler-rt default-libcxx default-lld llvm-libunwind -llvm_targets_BPF -llvm_targets_NVPTX
+sys-devel/llvm -llvm_targets_BPF -llvm_targets_NVPTX
+sys-fs/squashfs-tools lz4 lzma lzo zstd
+sys-kernel/linux-firmware savedconfig
+sys-process/htop hwloc
+sys-libs/libxcrypt static-libs
+sys-libs/zlib minizip
+
+virtual/imagemagick-tools tiff
+virtual/libcrypt static-libs
+
+x11-libs/libdrm video_cards_radeon
+x11-libs/libfm gtk
+x11-libs/libva vdpau
+x11-misc/dmenu savedconfig
+x11-misc/tint2 tint2conf
+x11-terms/rxvt-unicode 256-color -blink fading-colors perl unicode3 xft wide-glyphs -utmp -wtmp
+x11-terms/st savedconfig
+x11-themes/qtcurve gtk qt5
+x11-wm/dwm savedconfig
+
+# Lua
+app-arch/rpm LUA_SINGLE_TARGET: lua5-3
+dev-libs/libucl LUA_SINGLE_TARGET: lua5-3
+media-video/wireplumber LUA_SINGLE_TARGET: lua5-3
